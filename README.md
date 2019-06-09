@@ -29,6 +29,23 @@ Accounts are set up using the wonderful `accounts.js` library.
 
 I've included a number of animations using plain CSS and `react-spring`. If you're a react developer and want to animate your work learn `react-spring`. Thank me later. This project is using Plaid to access read info for users bank accounts.
 
+## Usage
+
+```sh
+# Run mongo
+sudo mongod
+
+# In ./server
+yarn install
+yarn watch
+
+# In ./client
+cp ./src/config/example.env.json ./src/config/development.env.json
+yarn install
+yarn start
+yarn gen:types:watch
+```
+
 ## License
 
 [MIT](LICENSE)
